@@ -37,6 +37,7 @@
 <!-- SECTION 1 — TRANG CHỦ -->
 <!-- ============================= -->
 <section id="trang-chu" class="hero">
+  <div class="hero-mist" aria-hidden="true"></div>
   <div class="hero-crack" aria-hidden="true">
     <svg viewBox="0 0 40 1000" preserveAspectRatio="none">
       <path d="M20,0 L14,80 L26,150 L10,230 L24,300 L16,380 L28,460 L12,540 L22,620 L18,700 L26,780 L14,860 L20,1000" />
@@ -54,6 +55,7 @@
       </div>
     </div>
   </div>
+  <div class="hero-scroll-cue" aria-hidden="true"><span></span></div>
 </section>
 
 <!-- ============================= -->
@@ -63,13 +65,17 @@
   <div class="narration-inner">
     <div class="narration-media">
       <img src="Ảnh/thuyetminh.jpg" alt="Thuyết minh di tích Cầu Gãy Sông Bé">
+      <span class="media-frame" aria-hidden="true"></span>
     </div>
     <div class="narration-copy">
       <h2 data-i18n-key="narration.title">THUYẾT MINH DI TÍCH</h2>
       <p data-i18n-key="narration.body">Cầu Sông Bé được xây dựng vào khoảng những năm 1925–1926 dưới thời Pháp thuộc nhằm phục vụ việc vận chuyển hàng hóa và khai thác các đồn điền cao su trong khu vực. Trong hai cuộc kháng chiến, cây cầu trở thành vị trí chiến lược quan trọng, gắn với nhiều trận đánh và sự hy sinh của quân dân địa phương. Đến ngày 29 tháng 4 năm 1975, phần giữa cây cầu bị đánh sập trong quá trình rút lui của quân đối phương, tạo nên hình ảnh "Cầu Gãy" còn lưu giữ đến ngày nay như một chứng tích của chiến tranh.</p>
 
       <div class="audio-player" role="group" aria-label="Trình phát âm thanh thuyết minh">
-        <button id="audio-toggle" class="audio-play" type="button" aria-label="Play narration audio">▶</button>
+        <button id="audio-toggle" class="audio-play" type="button" aria-label="Play narration audio">
+          <svg class="icon-play" viewBox="0 0 24 24" width="16" height="16"><path d="M6 4l14 8-14 8V4z" fill="currentColor"/></svg>
+          <svg class="icon-pause" viewBox="0 0 24 24" width="16" height="16"><rect x="5" y="4" width="5" height="16" fill="currentColor"/><rect x="14" y="4" width="5" height="16" fill="currentColor"/></svg>
+        </button>
         <span id="audio-current-time" class="audio-time">00:00</span>
         <div class="audio-track">
           <div id="audio-progress" class="audio-progress"></div>
@@ -111,14 +117,16 @@
     </div>
   </div>
   <div class="section-heading">
+    <p class="eyebrow eyebrow-light" data-i18n-key="timeline.eyebrow">Hành trình một thế kỷ</p>
     <h2 data-i18n-key="timeline.heading">LỊCH SỬ HÌNH THÀNH</h2>
+    <p class="section-lead" data-i18n-key="timeline.lead">Từ nhịp cầu đầu tiên bắc qua dòng Sông Bé đến hình ảnh "Cầu Gãy" còn lưu lại hôm nay, mỗi dấu mốc là một chương trong hành trình đấu tranh và đổi thay của vùng đất này.</p>
   </div>
 
   <div class="timeline">
     <div class="timeline-spine" aria-hidden="true"></div>
 
     <article class="timeline-item is-left">
-      <div class="timeline-media"><img src="Ảnh/1967.jpg" alt="Khởi công xây dựng cầu 1925-1926"></div>
+      <div class="timeline-media"><img class="timeline-gallery-img" role="button" tabindex="0" src="Ảnh/1967.jpg" alt="Khởi công xây dựng cầu 1925-1926"></div>
       <div class="timeline-content">
         <span class="timeline-year">1925–1926</span>
         <h3 data-i18n-key="timeline.item1.title">Khởi công xây dựng</h3>
@@ -127,7 +135,7 @@
     </article>
 
     <article class="timeline-item is-right">
-      <div class="timeline-media"><img src="Ảnh/KhangchienchongPhap.jpg" alt="Kháng chiến chống Pháp 1945-1954"></div>
+      <div class="timeline-media"><img class="timeline-gallery-img" role="button" tabindex="0" src="Ảnh/KhangchienchongPhap.jpg" alt="Kháng chiến chống Pháp 1945-1954"></div>
       <div class="timeline-content">
         <span class="timeline-year">1945–1954</span>
         <h3 data-i18n-key="timeline.item2.title">Kháng chiến chống Pháp</h3>
@@ -136,7 +144,7 @@
     </article>
 
     <article class="timeline-item is-left">
-      <div class="timeline-media"><img src="Ảnh/khangchienchongmy.jpg" alt="Kháng chiến chống Mỹ 1954-1975"></div>
+      <div class="timeline-media"><img class="timeline-gallery-img" role="button" tabindex="0" src="Ảnh/khangchienchongmy.jpg" alt="Kháng chiến chống Mỹ 1954-1975"></div>
       <div class="timeline-content">
         <span class="timeline-year">1954–1975</span>
         <h3 data-i18n-key="timeline.item3.title">Kháng chiến chống Mỹ</h3>
@@ -145,7 +153,7 @@
     </article>
 
     <article class="timeline-item is-right">
-      <div class="timeline-media"><img src="Ảnh/CauGay.webp" alt="Dấu mốc lịch sử 29 tháng 4 năm 1975"></div>
+      <div class="timeline-media"><img class="timeline-gallery-img" role="button" tabindex="0" src="Ảnh/CauGay.webp" alt="Dấu mốc lịch sử 29 tháng 4 năm 1975"></div>
       <div class="timeline-content">
         <span class="timeline-year">29/04/1975</span>
         <h3 data-i18n-key="timeline.item4.title">Dấu mốc lịch sử</h3>
@@ -184,6 +192,7 @@
 <!-- ============================= -->
 <section id="gia-tri" class="values">
   <div class="values-inner">
+    <p class="eyebrow eyebrow-light" data-i18n-key="values.eyebrow">Điều còn gìn giữ</p>
     <h2 data-i18n-key="values.heading">GIÁ TRỊ LỊCH SỬ</h2>
     <p class="values-lead" data-i18n-key="values.lead">Không chỉ là một công trình giao thông, Cầu Sông Bé còn là chứng nhân của lịch sử, ghi dấu nhiều sự kiện quan trọng trong hai cuộc kháng chiến và góp phần giáo dục truyền thống yêu nước cho các thế hệ hôm nay.</p>
 
@@ -209,6 +218,7 @@
     <div class="value-cards">
       <div class="value-card" role="region">
         <button class="value-card-toggle" type="button" aria-expanded="false">
+          <span class="value-icon" aria-hidden="true"><svg viewBox="0 0 40 40" width="26" height="26"><path d="M20 4l4 8 9 1.3-6.5 6.3 1.5 9-8-4.2-8 4.2 1.5-9L7 13.3 16 12l4-8z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></span>
           <span class="value-index">01</span>
           <h3 data-i18n-key="values.card1.title">Giá trị lịch sử</h3>
           <span class="accordion-icon" aria-hidden="true">›</span>
@@ -219,6 +229,7 @@
       </div>
       <div class="value-card" role="region">
         <button class="value-card-toggle" type="button" aria-expanded="false">
+          <span class="value-icon" aria-hidden="true"><svg viewBox="0 0 40 40" width="26" height="26"><path d="M4 20c4-8 8-12 16-12s12 4 16 12M8 20v12M32 20v12M4 32h32M8 32c0-4 5-6 12-6s12 2 12 6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
           <span class="value-index">02</span>
           <h3 data-i18n-key="values.card2.title">Giá trị kiến trúc</h3>
           <span class="accordion-icon" aria-hidden="true">›</span>
@@ -229,6 +240,7 @@
       </div>
       <div class="value-card" role="region">
         <button class="value-card-toggle" type="button" aria-expanded="false">
+          <span class="value-icon" aria-hidden="true"><svg viewBox="0 0 40 40" width="26" height="26"><path d="M20 8C14 6 8 6 5 8v22c3-2 9-2 15 0 6-2 12-2 15 0V8c-3-2-9-2-15 0zM20 8v22" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
           <span class="value-index">03</span>
           <h3 data-i18n-key="values.card3.title">Giá trị giáo dục</h3>
           <span class="accordion-icon" aria-hidden="true">›</span>
@@ -239,6 +251,7 @@
       </div>
       <div class="value-card" role="region">
         <button class="value-card-toggle" type="button" aria-expanded="false">
+          <span class="value-icon" aria-hidden="true"><svg viewBox="0 0 40 40" width="26" height="26"><path d="M20 4c3.5 4.5 3.5 8 0 12-3.5-4-3.5-7.5 0-12zM6 22c6-4.5 22-4.5 28 0-3 8-11 13-14 13S9 30 6 22z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></span>
           <span class="value-index">04</span>
           <h3 data-i18n-key="values.card4.title">Giá trị văn hóa</h3>
           <span class="accordion-icon" aria-hidden="true">›</span>
@@ -320,6 +333,17 @@
   </div>
 </footer>
 
+<!-- IMAGE MODAL -->
+<div id="image-modal" class="image-modal" role="dialog" aria-labelledby="modal-title" hidden>
+  <div class="modal-overlay"></div>
+  <div class="modal-content">
+    <button id="modal-close" class="modal-close" type="button" aria-label="Đóng ảnh">
+      <svg viewBox="0 0 24 24" width="24" height="24"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <img id="modal-image" src="" alt="" class="modal-image">
+  </div>
+</div>
+
 <script>
   const header = document.querySelector('.site-header');
   const sections = document.querySelectorAll('main > section, footer');
@@ -331,6 +355,8 @@
   const audioDuration = document.getElementById('audio-duration');
   const audioProgress = document.getElementById('audio-progress');
   const audioKnob = document.getElementById('audio-knob');
+  const iconPlay = document.querySelector('.icon-play');
+  const iconPause = document.querySelector('.icon-pause');
 
   const narrationAudio = new Audio();
   narrationAudio.preload = 'metadata';
@@ -341,7 +367,10 @@
 
   const setAudioState = (isPlaying) => {
     if (!audioToggle) return;
-    audioToggle.textContent = isPlaying ? '❚❚' : '▶';
+    if (iconPlay && iconPause) {
+      iconPlay.style.display = isPlaying ? 'none' : 'inline-flex';
+      iconPause.style.display = isPlaying ? 'inline-flex' : 'none';
+    }
     audioToggle.setAttribute('aria-label', isPlaying ? 'Pause narration audio' : 'Play narration audio');
   };
 
@@ -461,7 +490,9 @@
       'narration.title': 'THUYẾT MINH DI TÍCH',
       'narration.body': 'Cầu Sông Bé được xây dựng vào khoảng những năm 1925–1926 dưới thời Pháp thuộc nhằm phục vụ việc vận chuyển hàng hóa và khai thác các đồn điền cao su trong khu vực. Trong hai cuộc kháng chiến, cây cầu trở thành vị trí chiến lược quan trọng, gắn với nhiều trận đánh và sự hy sinh của quân dân địa phương. Đến ngày 29 tháng 4 năm 1975, phần giữa cây cầu bị đánh sập trong quá trình rút lui của quân đối phương, tạo nên hình ảnh "Cầu Sông Bé" còn lưu giữ đến ngày nay như một chứng tích của chiến tranh.',
       'narration.button': 'Bắt đầu nghe',
+      'timeline.eyebrow': 'Hành trình một thế kỷ',
       'timeline.heading': 'LỊCH SỬ HÌNH THÀNH',
+      'timeline.lead': 'Từ nhịp cầu đầu tiên bắc qua dòng Sông Bé đến hình ảnh "Cầu Gãy" còn lưu lại hôm nay, mỗi dấu mốc là một chương trong hành trình đấu tranh và đổi thay của vùng đất này.',
       'timeline.item1.title': 'Khởi công xây dựng',
       'timeline.item1.body': 'Thực dân Pháp xây dựng cầu nhằm kết nối các đồn điền cao su và phục vụ hoạt động khai thác thuộc địa tại khu vực Đông Nam Bộ.',
       'timeline.item2.title': 'Kháng chiến chống Pháp',
@@ -470,6 +501,7 @@
       'timeline.item3.body': 'Cầu tiếp tục giữ vai trò chiến lược trong hệ thống giao thông và quân sự, là cửa ngõ kết nối Bình Dương với Bình Phước và Tây Nguyên.',
       'timeline.item4.title': 'Dấu mốc lịch sử',
       'timeline.item4.body': 'Trong những ngày cuối của cuộc kháng chiến, phần giữa cây cầu bị đánh sập. Kể từ đó, hình ảnh "Cầu Sông Bé" trở thành biểu tượng lịch sử của vùng đất Sông Bé.',
+      'values.eyebrow': 'Điều còn gìn giữ',
       'values.heading': 'GIÁ TRỊ LỊCH SỬ',
       'values.lead': 'Không chỉ là một công trình giao thông, Cầu Sông Bé còn là chứng nhân của lịch sử, ghi dấu nhiều sự kiện quan trọng trong hai cuộc kháng chiến và góp phần giáo dục truyền thống yêu nước cho các thế hệ hôm nay.',
       'values.stat1': 'Năm xây dựng',
@@ -507,7 +539,9 @@
       'narration.title': 'SITE NARRATION',
       'narration.body': 'The Sông Bé Bridge was built around 1925–1926 during the French colonial period to support the transport of goods and the exploitation of rubber plantations in the region. During the two resistance wars, the bridge became a strategically important location tied to many battles and sacrifices. On April 29, 1975, the middle section was destroyed during the withdrawal of the opposing forces, leaving the image of the “Broken Bridge” preserved to this day as a historical witness.',
       'narration.button': 'Start listening',
+      'timeline.eyebrow': 'A century-long journey',
       'timeline.heading': 'FORMATION HISTORY',
+      'timeline.lead': 'From the first span crossing the Sông Bé river to the "Broken Bridge" that remains today, each milestone marks a chapter in this land\'s history of struggle and change.',
       'timeline.item1.title': 'Construction begins',
       'timeline.item1.body': 'The French colonial government built the bridge to connect rubber plantations and support extraction activities in the Southeast region.',
       'timeline.item2.title': 'Resistance against the French',
@@ -516,6 +550,7 @@
       'timeline.item3.body': 'The bridge continued to play a strategic role in transportation and military logistics, linking Binh Duong with Binh Phuoc and the Central Highlands.',
       'timeline.item4.title': 'Historic milestone',
       'timeline.item4.body': 'In the final days of the resistance, the middle span of the bridge was destroyed. Since then, the image of the “Broken Bridge” has become a lasting historical symbol of the Sông Bé land.',
+      'values.eyebrow': 'Why it endures',
       'values.heading': 'HISTORICAL VALUE',
       'values.lead': 'More than just a transportation structure, the Sông Bé Bridge stands as a witness to history, marking important events in the two resistance wars and helping educate future generations about national traditions.',
       'values.stat1': 'Year of construction',
@@ -721,6 +756,82 @@
 
     statsObserver.observe(statsSection);
   }
+
+  /* ============================= */
+  /* SCROLL REVEAL ANIMATIONS */
+  /* ============================= */
+  const revealEls = document.querySelectorAll(
+    '.hero-copy, .hero-scroll-cue, .section-heading, .narration-media, .narration-copy, .timeline-item, .value-card'
+  );
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.18 });
+  revealEls.forEach((el) => revealObserver.observe(el));
+
+  /* ============================= */
+  /* PARALLAX MIST EFFECT — HERO */
+  /* ============================= */
+  const heroMist = document.querySelector('.hero-mist');
+  const heroSectionEl = document.getElementById('trang-chu');
+  if (heroMist && heroSectionEl) {
+    const parallaxEffect = () => {
+      const scrollY = window.scrollY;
+      const heroHeight = heroSectionEl.offsetHeight;
+      if (scrollY < heroHeight) {
+        heroMist.style.transform = `translateY(${scrollY * 0.4}px)`;
+      }
+    };
+    window.addEventListener('scroll', parallaxEffect, { passive: true });
+  }
+
+  /* ============================= */
+  /* IMAGE MODAL — PHÓNG TO ẢNH LỊCH SỬ */
+  /* ============================= */
+  const imageModal = document.getElementById('image-modal');
+  const modalImage = document.getElementById('modal-image');
+  const modalCloseBtn = document.getElementById('modal-close');
+  const galleryImgs = document.querySelectorAll('.timeline-gallery-img');
+
+  const openImageModal = (imgElement) => {
+    modalImage.src = imgElement.src;
+    modalImage.alt = imgElement.alt;
+    imageModal.hidden = false;
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeImageModal = () => {
+    imageModal.hidden = true;
+    document.body.style.overflow = '';
+  };
+
+  galleryImgs.forEach((img) => {
+    img.addEventListener('click', () => openImageModal(img));
+    img.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        openImageModal(img);
+      }
+    });
+  });
+
+  if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeImageModal);
+  if (imageModal) {
+    imageModal.addEventListener('click', (e) => {
+      if (e.target === imageModal || e.target.classList.contains('modal-overlay')) {
+        closeImageModal();
+      }
+    });
+  }
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && imageModal && !imageModal.hidden) {
+      closeImageModal();
+    }
+  });
 </script>
 
 </body>
